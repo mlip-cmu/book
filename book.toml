@@ -2,7 +2,7 @@
 authors = ["Christian Kaestner"]
 language = "en"
 multilingual = false
-src = "src"
+src = "."
 title="Machine Learning in Production: From Models to Products"
 
 [preprocessor.pagetoc]

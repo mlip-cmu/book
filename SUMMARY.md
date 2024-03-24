@@ -1,6 +1,6 @@
 # Summary
 
-[Cover](../README.md)
+[Cover](README.md)
 
 # Setting the Stage
 
