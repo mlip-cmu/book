@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/27-header.jpg" alt="A photo of two fire extinguishers placed outside on the pavement in the sun. ">
+<img class="headerimg" src="img/27-header.jpg" alt="A photo of two fire extinguishers placed outside on the pavement in the sun.">
 <div class="chapter">Chapter 27</div>
 
 # Safety

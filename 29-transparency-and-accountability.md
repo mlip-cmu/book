@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/29-header.jpg" alt="A close-up photo of the mechanics of a clock, showcasing its intricate details. The clock is made up of several gears appearing of fine texture and looking to have a golden color. ">
+<img class="headerimg" src="img/29-header.jpg" alt="A close-up photo of the mechanics of a clock, showcasing its intricate details. The clock is made up of several gears appearing of fine texture and looking to have a golden color.">
 <div class="chapter">Chapter 29</div>
 
 # Transparency and Accountability
@@ -13,8 +13,7 @@ There are many examples where systems make automated decisions (e.g., filtering,
 
 <figure>
 
-![Screenshot of a thread of three messages on Twitter from 2019 reading "A friend of mine has been trying to hire a new employee for her department in a medium-sized org. After advertising several times with few applicants, and a couple of rounds of interviews, the new employee is less than great. Then she discovered there were other applicants ..." -- "Among them was someone she knows personally, who has a spot-on CV, loads of experience, lives locally and would be the perfect person for the job. So she goes to HR to ask why that application was never sent through to her dept. The answer – she didn't score well.
-" -- "It turns out the HR dept adopted screening software that asks a bunch of random questions that applicants must answer quickly, the results of which determine a suitability score. Only those deemed suitable are sent through to the department for interview."](./img/29-tweet-hiring.png)
+![Screenshot of a thread of three messages on Twitter from 2019 reading "A friend of mine has been trying to hire a new employee for her department in a medium-sized org. After advertising several times with few applicants, and a couple of rounds of interviews, the new employee is less than great. Then she discovered there were other applicants ..." -- "Among them was someone she knows personally, who has a spot-on CV, loads of experience, lives locally and would be the perfect person for the job. So she goes to HR to ask why that application was never sent through to her dept. The answer – she didn't score well. " -- "It turns out the HR dept adopted screening software that asks a bunch of random questions that applicants must answer quickly, the results of which determine a suitability score. Only those deemed suitable are sent through to the department for interview."](./img/29-tweet-hiring.png)
 
 <figcaption>
 

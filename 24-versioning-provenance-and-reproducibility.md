@@ -24,9 +24,7 @@ Consider this scenario drawn from controversies around the 2019 launch of Apple�
 
 <figure>
 
-![Screenshot of a tweet reading "The 
-@AppleCard
- is such a fucking sexist program. My wife and I filed joint tax returns, live in a community-property state, and have been married for a long time. Yet Apple’s black box algorithm thinks I deserve 20x the credit limit she does. No appeals work."](./img/24-applecard-tweet.png)
+![Screenshot of a tweet reading "The  @AppleCard  is such a fucking sexist program. My wife and I filed joint tax returns, live in a community-property state, and have been married for a long time. Yet Apple’s black box algorithm thinks I deserve 20x the credit limit she does. No appeals work."](./img/24-applecard-tweet.png)
 
 <figcaption>
 

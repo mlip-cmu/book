@@ -1,6 +1,4 @@
-<img class="headerimg" src="img/11-header.jpg" alt="A photo of a large collection of various water valves and pipes, all connected to a white pipe. The assortment of valves and pipes appears fragile and cobbled together.
-
-">
+<img class="headerimg" src="img/11-header.jpg" alt="A photo of a large collection of various water valves and pipes, all connected to a white pipe. The assortment of valves and pipes appears fragile and cobbled together.">
 <div class="chapter">Chapter 11</div>
 
 # Automating the ML Pipeline

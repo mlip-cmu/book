@@ -50,7 +50,7 @@ Science fiction stories and some researchers warn of a Terminator-style robot up
 
 <figure>
 
-![Screenshot of a twitter message reading "i (in a wheelchair) was just trapped *on* forbes ave by one of these robots, only days after their independent roll out. i can tell that as long as they continue to operate, they are going to be a major accessibility and safety issue." A photo below the text shows a small sidewalk delivery robot next to a person waiting at a crosswalk.](./img/23-starship-tweet.png)
+![Screenshot of a twitter message reading "i (in a wheelchair) was just trapped \*on\* forbes ave by one of these robots, only days after their independent roll out. i can tell that as long as they continue to operate, they are going to be a major accessibility and safety issue." A photo below the text shows a small sidewalk delivery robot next to a person waiting at a crosswalk.](./img/23-starship-tweet.png)
 
 <figcaption>
 

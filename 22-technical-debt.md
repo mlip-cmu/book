@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/22-header.jpg" alt="Photo of two sheets of paper on a table. The content of the paper is blurry but one has a readable heading bankruptcy and the other has a large red stamp "Past due".">
+<img class="headerimg" src="img/22-header.jpg" alt="Photo of two sheets of paper on a table. The content of the paper is blurry but one has a readable heading bankruptcy and the other has a large red stamp &quot;Past due&quot;.">
 <div class="chapter">Chapter 22</div>
 
 # Technical Debt

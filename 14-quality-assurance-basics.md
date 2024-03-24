@@ -1,6 +1,4 @@
-<img class="headerimg" src="img/14-header.jpg" alt="A photo of a person standing in a storage room filled with wooden barrels. He is holding a clipboard, filling out a form.
-
-">
+<img class="headerimg" src="img/14-header.jpg" alt="A photo of a person standing in a storage room filled with wooden barrels. He is holding a clipboard, filling out a form.">
 <div class="chapter">Chapter 14</div>
 
 # Quality Assurance Basics
@@ -250,7 +248,7 @@ Second, quality assurance activities should be planned and scheduled, just like 
 
 <figure>
 
-![A process model arranging 7 boxes in the form of a V. On the left side, boxes requirements analysis, architecture design, low-level design, and implementation are arranged in descending positions. On the right side implementation, unit testing, integration testing, and system testing are arranged in ascending order. Boxes at the same level are connected with dots, indicating that system-level testing corresponds to requirements analysis, integration testing to architectural design, and unit testing to low-level design. ](./img/14-v-model.svg)
+![A process model arranging 7 boxes in the form of a V. On the left side, boxes requirements analysis, architecture design, low-level design, and implementation are arranged in descending positions. On the right side implementation, unit testing, integration testing, and system testing are arranged in ascending order. Boxes at the same level are connected with dots, indicating that system-level testing corresponds to requirements analysis, integration testing to architectural design, and unit testing to low-level design.](./img/14-v-model.svg)
 
 <figcaption>
 
