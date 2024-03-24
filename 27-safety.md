@@ -224,7 +224,7 @@ Whether AI systems will eventually pose existential threats because they solve t
 
   * A paper surveying safety engineering for ML systems in automotive engineering: 🗎 Borg, Markus, Cristofer Englund, Krzysztof Wnuk, Boris Duran, Christoffer Levandowski, Shenjian Gao, Yanwen Tan, Henrik Kaijser, Henrik Lönn, and Jonas Törnqvist. “[Safely entering the deep: A review of verification and validation for machine learning and a challenge elicitation in the automotive industry](https://www.atlantis-press.com/journals/jase/125905766).” *Journal of Automotive Software Engineering*. Volume 1, Issue 1, Pages 1–19. 2019
 
-  * An extensive discussion of safety engineering broadly, including safety culture and the interplay between reliability and safety: 🕮 Leveson, Nancy G.[ Engineering a safer world: Systems thinking applied to safety](https://direct.mit.edu/books/book/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied). The MIT Press, 2016.
+  * An extensive discussion of safety engineering broadly, including safety culture and the interplay between reliability and safety: 🕮 Leveson, Nancy G. [Engineering a safer world: Systems thinking applied to safety](https://direct.mit.edu/books/book/2908/Engineering-a-Safer-WorldSystems-Thinking-Applied). The MIT Press, 2016.
 
   * A paper on safety engineering and architectural safety patterns for autonomous vehicles: 🗎 Salay, Rick, and Krzysztof Czarnecki. “[Using machine learning safely in automotive software: An assessment and adaption of software process requirements in ISO 26262](https://arxiv.org/pdf/1808.01614).” arXiv preprint 1808.01614, 2018.
 
