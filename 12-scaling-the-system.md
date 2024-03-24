@@ -80,7 +80,7 @@ In a *document data model,* data is stored in key-value pairs in collections, wh
         "account_name": "christian", 
         "account_id": "a/54351"
     },
-	"size": "5.7",
+    "size": "5.7",
     "camera": { 
         "manufacturer": "Google", 
         "print_name": "Google Pixel 5", 
