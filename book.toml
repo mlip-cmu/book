@@ -1,0 +1,17 @@
+[book]
+authors = ["Christian Kaestner"]
+language = "en"
+multilingual = false
+src = "src"
+title="Machine Learning in Production: From Models to Products"
+
+[preprocessor.pagetoc]
+[output.html]
+additional-css = ["theme/pagetoc.css"]
+additional-js  = ["theme/pagetoc.js"]
+mathjax-support = false
+git-repository-url = "https://github.com/mlip-cmu/book"
+git-repository-icon = "fa-github"
+
+[build]
+extra-watch-dirs = ["README.md"] 
