@@ -182,12 +182,12 @@ a > .hljs {
     right: var(--page-padding);
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1480px) {
     .nav-wide-wrapper { display: none; }
     .nav-wrapper { display: block; }
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1780px) {
     .sidebar-visible .nav-wide-wrapper { display: none; }
     .sidebar-visible .nav-wrapper { display: block; }
 }
