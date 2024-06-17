@@ -5,7 +5,7 @@
 
 *Machine-learning pipelines* contain the code to train, evaluate, and deploy models that are then used within products. As with all code, the code in a pipeline can and should be tested. When problems occur, code in pipelines often fails silently, simply not doing the correct thing, but without crashing. If nobody notices silent failures, problems can go undetected a long time. Problems in pipelines often result in models of lower quality. Quality assurance of pipeline code becomes particularly important when pipelines are executed regularly to update models with new data.
 
-While machine-learned models and data quality are difficult to test, pipeline code is not really different from traditional code: It transforms data, calls various libraries, and interacts with files, databases, or networks. The conventional nature of pipeline code makes it much more amenable to the traditional software-quality-assurance approaches surveyed in chapter *[Quality Assurance Basics](14-quality-assurance-basics.md)*. In the following, we will discuss testing, code review, and static analysis for pipeline code.
+While machine-learned models and data quality are difficult to test, pipeline code is not really different from traditional code: it transforms data, calls various libraries, and interacts with files, databases, or networks. The conventional nature of pipeline code makes it much more amenable to the traditional software-quality-assurance approaches surveyed in chapter *[Quality Assurance Basics](14-quality-assurance-basics.md)*. In the following, we will discuss testing, code review, and static analysis for pipeline code.
 
 ## Silent Mistakes in ML Pipelines
 
@@ -15,7 +15,7 @@ Most data scientists can share stories of mistakes in machine-learning pipelines
 
   * The process that extracts additional training data from recent orders crashes after an update of the database connector library. Training data is hence no longer updated, but the pipeline continues to train a model every day based on exactly the same data. The problem is not observed by operators who see successful training executions and stable daily reports of the offline accuracy evaluation.
 
-  * An external commercial weather API provides part of the data used in training the model. To account for short-term outages of the weather API, missing data is recorded with *n/a* values, which are later replaced with default values in a later data-cleaning step of the pipeline. However, when credit-card payments for the API expire unnoticed, the weather API rejects all requests – this is not noticed either for a long time because the pipeline still produces a model, albeit based on lower-quality data with default values instead of real weather data.
+  * An external commercial weather API provides part of the data used in training the model. To account for short-term outages of the weather API, missing data is recorded with *n/a* values, which are later replaced with default values in a later data-cleaning step of the pipeline. However, when credit-card payments for the API expire unnoticed, the weather API rejects all requests—this is not noticed either for a long time because the pipeline still produces a model, albeit based on lower-quality data with default values instead of real weather data.
 
   * During feature engineering, time values are [encoded cyclically](https://towardsdatascience.com/cyclical-features-encoding-its-about-time-ce23581845ca) to better fit the properties of the machine-learning algorithm and to better handle predictions around midnight. Unfortunately, due to a coding bug, the learning algorithm receives the original untransformed data. It still learns a model, but a weaker one than had the data been transformed as intended.
 
@@ -38,7 +38,7 @@ Testing deliberately executes code with selected inputs to observe whether the c
 
 ### Testability and Modularity (“From Notebooks to Pipelines”)
 
-It is much easier to test small and well-defined units of code than big and complex programs. Hence, software engineers typically decompose complex programs into small units (e.g., modules, objects, functions) that can each be specified and tested independently. Branching decisions like *if* statement in a program can each double the number of paths through the program, making it much more difficult to test large complex units than small and simple ones. When a piece of code has few internal decisions and limits interactions with other parts of the system, it is much easier to identify inputs to test the various expected (and invalid) executions.
+It is much easier to test small and well-defined units of code than big and complex programs. Hence, software engineers typically decompose complex programs into small units (e.g., modules, objects, functions) that can each be specified and tested independently. Branching decisions like *if* statement in a program can each double the number of paths through the program, making it much more difficult to test large complex units than small and simple ones. When a piece of code has few internal decisions and limits interactions with other parts of the system, it is much easier to identify inputs to test the various expected (and invalid) executions. 
 
 Much data-science code is initially written in notebooks and scripts, typically with minimal structure and abstractions, but with many global variables. Data-science code usually has few explicit branching decisions, but tends to be a long sequence of statements without abstractions. Data science code is also typically self-contained in that it loads data from a specific source and simply prints results, often without any parameterization. All this makes data-science code in notebooks and scripts difficult to test, because (1) we cannot easily execute the code with different inputs, (2) we cannot easily isolate and separately test different parts of the notebook independently, and (3) we may have a hard time automatically checking outputs if they are only printed to the console.
 
@@ -121,18 +121,18 @@ def pipeline():
 
 <figcaption>
 
-Example of the same data science code split into multiple separate functions with some error handling that can be tested independently.
+An example of the same data science code split into multiple separate functions with some error handling that can be tested independently.
 
 </figcaption>
 </figure>
 
-All pipeline code – including data acquisition, data cleaning, feature extraction, model training, and model evaluation steps -- should be written in modular, reproducible, and testable implementations, typically as individual functions with clear inputs and outputs and clear dependencies to libraries and other components in the system, if needed. 
+All pipeline code—including data acquisition, data cleaning, feature extraction, model training, and model evaluation steps—should be written in modular, reproducible, and testable implementations, typically as individual functions with clear inputs and outputs and clear dependencies to libraries and other components in the system, if needed. 
 
-Many infrastructure offerings for data-science pipelines now support writing pipeline steps as individual functions with the infrastructure, where the infrastructure then handles scheduling executions and moving data between functions. For example, data flow frameworks like *[Luigi](https://github.com/spotify/luigi)*, *[DVC](https://dvc.org/)*, *[Airflow](https://airflow.apache.org/)*, *[d6tflow](https://github.com/d6t/d6tflow)*, and *[Ploomber](https://ploomber.io/)* can be used for this orchestration of modular units, especially if steps are long-running and should be scheduled and distributed flexibly. Several cloud providers provide services to host and execute entire pipelines and experimentation infrastructure with their infrastructure, such as *[DataBricks](https://databricks.com/)* and *[AWS SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/)*.
+Many infrastructure offerings for data-science pipelines now support writing pipeline steps as individual functions with the infrastructure, where the infrastructure then handles scheduling executions and moving data between functions. For example, data flow frameworks like [Luigi](https://github.com/spotify/luigi), [DVC](https://dvc.org/), [Airflow](https://airflow.apache.org/), [d6tflow](https://github.com/d6t/d6tflow), and [Ploomber](https://ploomber.io/) can be used for this orchestration of modular units, especially if steps are long-running and should be scheduled and distributed flexibly. Several cloud providers provide services to host and execute entire pipelines and experimentation infrastructure with their infrastructure, such as [DataBricks](https://databricks.com/) and [AWS SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/).
 
 ### Automating Tests and Continuous Integration
 
-To test code in pipelines, we can return to standard software-testing approaches. Tests are written in a testing framework, such as *pyunit*, so that test execution and reporting of results can be easily executed in an development environment – or by a continuous integration service whenever any pipeline code is modified.
+To test code in pipelines, we can return to standard software-testing approaches. Tests are written in a testing framework, such as *pytest*, so that test execution and reporting of results can be easily executed in an development environment—or by a continuous integration service whenever any pipeline code is modified.
 
 <figure>
 
@@ -148,7 +148,7 @@ def test_day_of_week_encoding():
 
 <figcaption>
 
-Example of a test for the ‘encode_day_of_week’ function, checking that the function correctly adds a column to the data frame with expected encoded values for the day of the week.
+An example of a test for the ‘encode_day_of_week’ function, checking that the function correctly adds a column to the data frame with expected encoded values for the day of the week.
 
 </figcaption>
 </figure>
@@ -170,7 +170,7 @@ def test_pipeline():
 
 <figcaption>
 
-Example of an integration test that executes multiple pipeline steps together, but on fixed test data with given accuracy expectations.
+An example of an integration test that executes multiple pipeline steps together, but on fixed test data with given accuracy expectations.
 
 </figcaption>
 </figure>
@@ -181,7 +181,7 @@ Small modular units of code with few external dependencies are much easier to te
 
 Importantly, testing with *external* dependencies is usually not desirable if these dependencies may change between test executions or if they even depend on the live state of the production system. It is generally better to isolate the tests from such dependencies if the dependencies are not relevant to the test. For example, if the tested code sends a request to a web API to receive data, the output of the computation may change as the API returns different results, making it hard to write concrete tests. If a database is sometimes temporarily unavailable or slow, test results can appear flaky even though the pipeline code works as expected. While there is value in testing the interaction of multiple components, it is preferable to initially test behavior as much in isolation as possible to reduce complexity and avoid noise from irrelevant interference.
 
-Not all dependencies are easy to eliminate. If moving calls to external dependencies is not feasible or desired, it is possible to replace these dependencies with a *[stub](https://en.wikipedia.org/wiki/Test_stub)* (or *[mock](https://en.wikipedia.org/wiki/Mock_object)* or *[test double](https://en.wikipedia.org/wiki/Test_double)*) during testing. A stub implements the same interface as the external dependency, but provides a simple fixed implementation for testing that always returns the same fixed result, without actually using the external dependency. More sophisticated *mock object libraries*, such as *[unittest.mock](https://docs.python.org/3/library/unittest.mock.html)*, can help write objects with specific responses to various calls. The tests can now be executed deterministically without any external calls.
+Not all dependencies are easy to eliminate. If moving calls to external dependencies is not feasible or desired, it is possible to replace these dependencies with a *[stub](https://en.wikipedia.org/wiki/Test_stub)* (or *[mock](https://en.wikipedia.org/wiki/Mock_object)* or *[test double](https://en.wikipedia.org/wiki/Test_double)*) during testing. A stub implements the same interface as the external dependency, but provides a simple fixed implementation for testing that always returns the same fixed result, without actually using the external dependency. More sophisticated *mock object libraries*, such as [unittest.mock](https://docs.python.org/3/library/unittest.mock.html), can help write objects with specific responses to various calls. The tests can now be executed deterministically without any external calls. 
 
 <figure>
 
@@ -214,7 +214,7 @@ def test_do_not_overwrite_gender():
 
 <figcaption>
 
-Example data cleaning code that fills in missing gender information in our customer data. An external ML model (called as a remote inference service) is used to infer the gender based on the customer’s name and location. To make this code more testable, the function is decoupled from the specific API, which is now passed in as an argument. Now, we can test the cleaning code without the external API by calling the cleaning function with an alternative hardcoded implementation of the dependency (‘model_stub’), which produces predictable behavior during testing. This way, multiple tests can deliberately inject different behaviors for different tests without ever having to deal with the real model inference backend.
+Example data cleaning code that fills in missing gender information in our customer data. An external ML model (hosted remotely) is used to infer the gender based on the customer’s name and location. To make this code more testable, the function is decoupled from the specific API, which is now passed in as an argument. Now, we can test the cleaning code without the external API by calling the cleaning function with an alternative hardcoded implementation of the dependency (“model_stub”), which produces predictable behavior during testing. This way, multiple tests can deliberately inject different behaviors for different tests without ever having to deal with the real model inference back end.
 
 </figcaption>
 </figure>
@@ -251,12 +251,12 @@ def test_invalid_day_of_week_data():
 
 <figcaption>
 
-Example of a unit test that ensures that the ‘encode_day_of_week’ function correctly rejects invalid inputs (here a wrong column name) with a ValueError.
+An example of a unit test that ensures that the “encode_day_of_week” function correctly rejects invalid inputs (here a wrong column name) with a ValueError.
 
 </figcaption>
 </figure>
 
-If the code has external dependencies that may produce problems in practice, it is usually a good idea to ensure that the code handles errors from those dependencies as well. For example, if data-collection code relies on a network connection that may not always be available, it is worth testing error handling for cases where the connection fails. To this end, stubs are powerful to *simulate faults* as part of a test case to ensure that the system either recovers correctly from the simulated fault or throws the right exception if recovery is impossible. Stubs can be used to simulate many different kinds of defects from external components, such as dropped network connections, slow replies, and illformed responses. For example, we could inject connectivity problems, behaving as if a remote server is not available on the first try, to test that the retry mechanism recovers from a short-term outage correctly, but also that it throws an exception after the third failed attempt.
+If the code has external dependencies that may produce problems in practice, it is usually a good idea to ensure that the code handles errors from those dependencies as well. For example, if data-collection code relies on a network connection that may not always be available, it is worth testing error handling for cases where the connection fails. To this end, stubs are powerful to *simulate faults* as part of a test case to ensure that the system either recovers correctly from the simulated fault or throws the right exception if recovery is impossible. Stubs can be used to simulate many different kinds of defects from external components, such as dropped network connections, slow replies, and ill-formed responses. For example, we could inject connectivity problems, behaving as if a remote server is not available on the first try, to test that the retry mechanism recovers from a short-term outage correctly, but also that it throws an exception after the third failed attempt.
 
 <figure>
 
@@ -300,7 +300,7 @@ def test_exception_if_unable_to_recover():
 
 <figcaption>
 
-Example of testing a recovery mechanism for a failing network connection by using a stub for that connection that deliberately injects network problems. The code should work when there are no network problems and when there are recoverable network problems, and it should throw an exception if the problem is not recoverable with three retries.
+An example of testing a recovery mechanism for a failing network connection by using a stub for that connection that deliberately injects network problems. The code should work when there are no network problems and when there are recoverable network problems, and it should throw an exception if the problem is not recoverable with three retries.
 
 </figcaption>
 </figure>
@@ -331,7 +331,7 @@ def get_data(connection, value):
 
 <figcaption>
 
-Example using a [Prometheus](https://prometheus.io/) counter to record every time a connection fails and is retried, which can then be monitored in dashboard and alerting infrastructure like [Grafana](https://grafana.com/).
+An example using a [Prometheus](https://prometheus.io/) counter to record every time a connection fails and is retried, which can then be monitored in dashboard and alerting infrastructure like [Grafana](https://grafana.com/).
 
 </figcaption>
 </figure>
@@ -340,7 +340,8 @@ Example using a [Prometheus](https://prometheus.io/) counter to record every tim
 
 Data science pipelines often contain many routine steps built with common libraries, such as *pandas* or *scikit-learn*. We usually assume that these libraries have already been tested and do not independently test whether the library’s functions are correctly implemented. For example, we would not test that scikit-learn computes the mean square error correctly, that panda’s *groupby* method is implemented correctly, or that Hadoop distributes the computation correctly across large datasets. In contrast, we should focus testing on our custom data-transformation code.
 
-**Data quality checks.** Any code that receives data should check for data quality and those data quality checks should be tested to ensure that the code correctly detects and possibly repairs invalid and low-quality data. As discussed in chapter *[Data Quality](16-data-quality.md)*, data quality code typically has two parts: 
+**Data quality checks.**
+ Any code that receives data should check for data quality and those data quality checks should be tested to ensure that the code correctly detects and possibly repairs invalid and low-quality data. As discussed in chapter *[Data Quality](16-data-quality.md)*, data quality code typically has two parts: 
 
   * *Detection:* Code analyzes whether provided data meets expectations.  Data quality checks can come in many forms, including (1) checking that any data was provided at all, (2) schema validation that would detect when an API provides data in a different format, and (3) more sophisticated approaches that check for distribution stability or outliers in input data.
 
@@ -351,7 +352,8 @@ Code for detection and repair can both be tested with unit tests. Detection code
 
 Generally, if repair for data quality problems is not possible or too many data quality problems are observed, the pipeline may also decide to raise an error. Even if repair is possible, the pipeline might report the problem to a monitoring system to observe whether the problem is common or even increasingly frequent, as illustrated with the retry mechanism in *get_data*. Both raising error messages intentionally and monitoring the frequency of repairs can avoid some of the common silent mistakes. 
 
-**Data wrangling code.** Any code dealing with transforming data deserves scrutiny, especially feature-engineering code. Data transformations often need to deal with tricky corner cases, and it is easy to introduce mistakes that can be difficult to detect. Data scientists often inspect some sample data to see whether the transformed data looks correct, but rarely systematically test for corner cases and rarely deliberately decide how to handle invalid data (e.g., throw an exception or replace with default value). If data transformation code is modularized, tests can check correct transformations, check corner cases, and check that unexpected inputs are rejected.
+**Data wrangling code.**
+ Any code dealing with transforming data deserves scrutiny, especially feature-engineering code. Data transformations often need to deal with tricky corner cases, and it is easy to introduce mistakes that can be difficult to detect. Data scientists often inspect some sample data to see whether the transformed data looks correct, but rarely systematically test for corner cases and rarely deliberately decide how to handle invalid data (e.g., throw an exception or replace with default value). If data transformation code is modularized, tests can check correct transformations, check corner cases, and check that unexpected inputs are rejected.
 
 <figure>
 
@@ -375,11 +377,14 @@ Two examples of incorrect data transformations from a Kaggle competition on Andr
 </figcaption>
 </figure>
 
-**Training code.** Even when the full training process may ingest huge data sets and take a long time, tests with small input datasets can ensure that the training code is set up correctly. As learning is usually entirely performed by a machine-learning library, it is uncommon to test the learning code beyond the basic setup. For example, most API misuse issues and most mismatch issues of tensor dimensions and size in deep learning can be detected by executing the training code with small datasets. 
+**Training code.**
+ Even when the full training process may ingest huge datasets and take a long time, tests with small input datasets can ensure that the training code is set up correctly. As learning is usually entirely performed by a machine-learning library, it is uncommon to test the learning code beyond the basic setup. For example, most API misuse issues and most mismatch issues of tensor dimensions and size in deep learning can be detected by executing the training code with small datasets. 
 
-**Interactions with other components.** The pipeline interacts with many other components of the system and many problems can occur there, for example, when loading training data, when interacting with a feature server, when uploading a serialized model, or when running A/B tests. These kinds of problems relate to the interaction of multiple components. It is usually worth testing that local error handling and error reporting mechanisms work as expected, as discussed above. Beyond that, we can test the correct interaction of multiple components with integration testing and system testing, to which we will return shortly in chapter *[System Quality](18-system-quality.md)*.
+**Interactions with other components.**
+ The pipeline interacts with many other components of the system, and many problems can occur there, for example, when loading training data, when interacting with a feature server, when uploading a serialized model, or when running A/B tests. These kinds of problems relate to the interaction of multiple components. It is usually worth testing that local error handling and error reporting mechanisms work as expected, as discussed earlier. Beyond that, we can test the correct interaction of multiple components with integration testing and system testing, to which we will return shortly in chapter *[System Quality](18-system-quality.md)*.
 
-**Beyond functional correctness.** Beyond testing the correctness of the pipeline implementations, it can be worth considering other qualities, such as latency, throughput, and memory needs, when machine-learning pipelines operate at scale on large datasets. This can help ensure that changes to code in the pipeline do not derail resource needs for executing the pipeline. Standard libraries and profilers can be used just as in non-ML software.
+**Beyond functional correctness.**
+ Beyond testing the correctness of the pipeline implementations, it can be worth considering other qualities, such as latency, throughput, and memory needs, when machine-learning pipelines operate at scale on large datasets. This can help ensure that changes to code in the pipeline do not derail resource needs for executing the pipeline. Standard libraries and profilers can be used just as in non-ML software.
 
 ## Static Analysis of ML Pipelines
 
@@ -389,13 +394,13 @@ Generic static analysis tools that are not specialized for data-science code can
 
 Academics have developed static-analysis tools for specific kinds of issues in data science code, and we expect to see more of them in the future. Recent examples include:
 
-  * *[Pythia](https://yanniss.github.io/tensor-ecoop20.pdf)* uses static analysis to detect shape mismatch in TensorFlow programs, for example, when tensors provided to the TensorFlow library do not match in their dimensions and dimensions’ sizes.
+  * [Pythia](https://yanniss.github.io/tensor-ecoop20.pdf) uses static analysis to detect shape mismatch in TensorFlow programs, for example, when tensors provided to the TensorFlow library do not match in their dimensions and dimensions’ sizes.
 
-  * *[Leakage Analysis](https://github.com/malusamayo/leakage-analysis)* analyzes data science code with data-flow analysis to find instances of data leakage where training and test data are not strictly separate, possibly resulting in overfitting on test data and too optimistic accuracy results.
+  * [Leakage Analysis](https://github.com/malusamayo/leakage-analysis) analyzes data science code with data-flow analysis to find instances of data leakage where training and test data are not strictly separate, possibly resulting in overfitting on test data and too optimistic accuracy results.
 
-  * *[PySmell](https://arxiv.org/abs/2203.00803)* and similar “code smell” detectors for data science code can detect common anti-patterns and suspicious code fragments that indicate poor coding practices, such as large amounts of poorly structured deep learning code and unwanted debugging code.
+  * [PySmell](https://arxiv.org/abs/2203.00803) and similar “code smell” detectors for data science code can detect common anti-patterns and suspicious code fragments that indicate poor coding practices, such as large amounts of poorly structured deep learning code and unwanted debugging code.
 
-  * *[mlint](https://github.com/bvobart/mllint)* analyzes the infrastructure around pipeline code, statically detecting the use of “best engineering practices” such as using version control, using dependency management, and writing tests in a project.
+  * [mlint](https://github.com/bvobart/mllint) analyzes the infrastructure around pipeline code, statically detecting the use of “best engineering practices” such as using version control, using dependency management, and writing tests in a project.
 
 
 ## Process Integration and Test Maturity
@@ -406,25 +411,25 @@ Pipeline code ready for production should be considered like any other code in a
 
 Since data science code is often developed in an exploratory fashion in a notebook before being transformed into a more robust pipeline for production, it is not common to write tests during the early exploratory phase of a project, because much of the early code is thrown away anyway when experiments fail. This places a higher burden to write and test robust code when eventually migrating the pipeline for production. In a rush to get to market, there may be little incentive to step back and invest in testing when the data-science code in the notebook already shows promising results, yet quality assurance should probably be part of the milestone for releasing the model and should certainly be a prerequisite for automating regular runs of the pipeline to deploy model updates without developers in the loop. Neglecting quality assurances invites the kind of silent mistakes discussed throughout this chapter and can cause substantial effort to fix the system later; we will return to this dynamic in chapter *[Technical Debt](22-technical-debt.md)*.
 
-Project managers should plan for quality assurance activities for pipelines, allocate time, and assign clear deliverables and responsibilities. Having an explicit checklist can help to assure that many common concerns are covered, not just functional correctness of certain data transformations. For example, a group at Google introduced the idea of an *[ML test score](https://research.google.com/pubs/archive/46555.pdf)*, consisting of a list of possible tests a team may perform around the pipeline, scoring a point for each of 28 concerns tested by a team and a second point for each concern where tests are automated. The 28 concerns include a range of different testable issues, such as whether a feature benefits the model, offline and online evaluation of models, code review of model code, unit testing of the pipeline code, adoption of canary releases, and monitoring for training-serving skew, grouped in the themes feature tests, model tests, ML infrastructure tests, and production monitoring. 
+Project managers should plan for quality assurance activities for pipelines, allocate time, and assign clear deliverables and responsibilities. Having an explicit checklist can help to assure that many common concerns are covered, not just functional correctness of certain data transformations. For example, a group at Google introduced the idea of an *[ML test score](https://research.google.com/pubs/archive/46555.pdf)*, consisting of a list of possible tests a team may perform around the pipeline, scoring a point for each of twenty-eight concerns tested by a team and a second point for each concern where tests are automated. The twenty-eight concerns include a range of different testable issues, such as whether a feature benefits the model, offline and online evaluation of models, code review of model code, unit testing of the pipeline code, adoption of canary releases, and monitoring for training-serving skew, grouped in the themes feature tests, model tests, ML infrastructure tests, and production monitoring. 
 
 The idea of tracking the *maturity* of quality-assurance practices in a project and comparing scores across projects or teams can signal the importance of quality assurance to the teams and encourage the adoption and documentation of quality-assurance practices as part of the process. While the specific concerns from the *ML test score* paper may not generalize to all projects and may be incomplete for others, they are a great starting point to discuss what quality-assurance practices should be tracked or even required.
 
 ## Summary
 
-The code to transform data, to train models, and to automate the entire process from data loading to model deployment in a pipeline should undergo quality assurance just as any other code in the system. In contrast to the machine-learned model itself which requires different quality assurance strategies, pipeline code can be assured just like any other code through automated testing, code review, and static analysis. Testing is made easier by modularizing the code and minimizing dependencies. Given the exploratory nature of data science, quality assurance for pipeline code is often neglected even when transitioning from a notebook to production infrastructure; hence it is useful to make an explicit effort to integrate quality assurance into the process.
+The code to transform data, to train models, and to automate the entire process from data loading to model deployment in a pipeline should undergo quality assurance just as any other code in the system. In contrast to the machine-learned model itself, which requires different quality assurance strategies, pipeline code can be assured just like any other code through automated testing, code review, and static analysis. Testing is made easier by modularizing the code and minimizing dependencies. Given the exploratory nature of data science, quality assurance for pipeline code is often neglected even when transitioning from a notebook to production infrastructure; hence it is useful to make an explicit effort to integrate quality assurance into the process.
 
 ## Further Readings
 
-  * A list of 28 concerns that can be tested automatically around machine-learning pipelines and discussion of a test score to assess the maturity of a team’s quality-assurance practices: 🗎 Breck, Eric, Shanqing Cai, Eric Nielsen, Michael Salib, and D. Sculley. "*[The ML test score: A rubric for ML production readiness and technical debt reduction](https://research.google.com/pubs/archive/46555.pdf).*" In *International Conference on Big Data (Big Data)*, pp. 1123-1132. IEEE, 2017.
+  * A list of twenty-eight concerns that can be tested automatically around machine-learning pipelines and discussion of a test score to assess the maturity of a team’s quality-assurance practices: 🗎 Breck, Eric, Shanqing Cai, Eric Nielsen, Michael Salib, and D. Sculley. “[The ML Test Score: A Rubric for ML Production Readiness and Technical Debt Reduction](https://research.google.com/pubs/archive/46555.pdf).” In *International Conference on Big Data (Big Data)*, 2017, pp. 1123–1132.
 
-  * Quality assurance is prominently covered in most textbooks on software engineering and dedicated books on testing and other quality assurance strategies exist, such as 🕮 Copeland, Lee. *[A practitioner's guide to software test design](https://bookshop.org/books/a-practitioner-s-guide-to-software-test-design/9781580537919)*. Artech House, 2004. 🕮 Aniche, Mauricio. *[Effective Software Testing: A Developer's Guide](https://bookshop.org/books/effective-software-testing-a-developer-s-guide/9781633439931)*. Simon and Schuster, 2022; and 🕮 Roman, Adam. *[Thinking-driven testing](https://bookshop.org/books/thinking-driven-testing-the-most-reasonable-approach-to-quality-control/9783319731940)*. Springer, 2018.
+  * Quality assurance is prominently covered in most textbooks on software engineering, and dedicated books on testing and other quality assurance strategies exist, such as 🕮 Copeland, Lee. *[A Practitioner's Guide to Software Test Design](https://bookshop.org/books/a-practitioner-s-guide-to-software-test-design/9781580537919)*. Artech House, 2004. 🕮 Aniche, Mauricio. *[Effective Software Testing: A Developer's Guide](https://bookshop.org/books/effective-software-testing-a-developer-s-guide/9781633439931)*. Simon and Schuster, 2022; and 🕮 Roman, Adam. *[Thinking-Driven Testing](https://bookshop.org/books/thinking-driven-testing-the-most-reasonable-approach-to-quality-control/9783319731940)*. Springer, 2018.
 
-  * Examples of academic papers using various static analyses for data science code: 🗎 Lagouvardos, Sifis, Julian Dolby, Neville Grech, Anastasios Antoniadis, and Yannis Smaragdakis. "[Static analysis of shape in TensorFlow programs](https://drops.dagstuhl.de/opus/volltexte/2020/13172/)." In *Proc. European Conference on Object-Oriented Programming (ECOOP)*, 2020. 🗎 Yang, Chenyang, Rachel A. Brower-Sinning, Grace A. Lewis, and Christian Kästner. "[Data Leakage in Notebooks: Static Detection and Better Processes](https://arxiv.org/abs/2209.03345)." In *Proc. Int’l Conf. Automated Software Engineering,* 2022. 🗎 Head, Andrew, Fred Hohman, Titus Barik, Steven M. Drucker, and Robert DeLine. "[Managing messes in computational notebooks](https://dl.acm.org/doi/abs/10.1145/3290605.3300500)." In *Proceedings of the Conference on Human Factors in Computing Systems*, 2019. 🗎 Gesi, Jiri, Siqi Liu, Jiawei Li, Iftekhar Ahmed, Nachiappan Nagappan, David Lo, Eduardo Santana de Almeida, Pavneet Singh Kochhar, and Lingfeng Bao. "[Code Smells in Machine Learning Systems](https://arxiv.org/abs/2203.00803)." arXiv preprint 2203.00803, 2022. 🗎 van Oort, Bart, Luís Cruz, Babak Loni, and Arie van Deursen. "[’Project smells’ – Experiences in Analysing the Software Quality of ML Projects with mllint](https://arxiv.org/abs/2201.08246)." In *Proc. ICSE SEIP,* 2022.
+  * Examples of academic papers using various static analyses for data science code: 🗎 Lagouvardos, Sifis, Julian Dolby, Neville Grech, Anastasios Antoniadis, and Yannis Smaragdakis. “[Static Analysis of Shape in TensorFlow Programs](https://drops.dagstuhl.de/opus/volltexte/2020/13172/).” In *Proceedings of the European Conference on Object-Oriented Programming (ECOOP)*, 2020. 🗎 Yang, Chenyang, Rachel A. Brower-Sinning, Grace A. Lewis, and Christian Kästner. “[Data Leakage in Notebooks: Static Detection and Better Processes](https://arxiv.org/abs/2209.03345).” In *Proceedings of the Int’l Conf. Automated Software Engineering,* 2022. 🗎 Head, Andrew, Fred Hohman, Titus Barik, Steven M. Drucker, and Robert DeLine. “[Managing Messes in Computational Notebooks](https://dl.acm.org/doi/abs/10.1145/3290605.3300500).” In *Proceedings of the Conference on Human Factors in Computing Systems*, 2019. 🗎 Gesi, Jiri, Siqi Liu, Jiawei Li, Iftekhar Ahmed, Nachiappan Nagappan, David Lo, Eduardo Santana de Almeida, Pavneet Singh Kochhar, and Lingfeng Bao. “[Code Smells in Machine Learning Systems](https://arxiv.org/abs/2203.00803).” arXiv preprint 2203.00803, 2022. 🗎 van Oort, Bart, Luís Cruz, Babak Loni, and Arie van Deursen. “[‘Project Smells’—Experiences in Analysing the Software Quality of ML Projects with mllint](https://arxiv.org/abs/2201.08246).” In *Proceedings of the International Conference on Software Engineering: Software Engineering in Practice,* 2022.
 
 
 
 
 ---
 *As all chapters, this text is released under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0</a> license.*
-*Last updated on 2024-03-10.*
+*Last updated on 2024-06-13.*
