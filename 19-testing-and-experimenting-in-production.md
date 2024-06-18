@@ -20,7 +20,7 @@ Testing in production is not a new idea and has been used in systems without mac
 
 <figcaption>
 
-Windows 95 was one of the first beta tests conducted at truly large scale.
+Windows 95 was one of the first beta tests conducted at truly large scale. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -36,7 +36,7 @@ The first big telemetry step was sending *crash reports* whenever the software c
 
 <figcaption>
 
-Many operating systems offer to send crash telemetry on application crashes.
+Many operating systems offer to send crash telemetry on application crashes. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -49,7 +49,7 @@ Soon, many software systems started collecting and uploading telemetry not only 
 
 <figcaption>
 
-Many desktop applications provide consent or opt-out mechanisms for sharing data about user behavior with developers.
+Many desktop applications provide consent or opt-out mechanisms for sharing data about user behavior with developers. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -285,7 +285,7 @@ In practice, the *t-test* is a common statistical test to check whether two samp
 
 <figcaption>
 
-Example of a dashboard showing the result of an A/B experiment from [https://conversionsciences.com/ab-testing-statistics/](https://conversionsciences.com/ab-testing-statistics/)
+Example of a dashboard showing the result of an A/B experiment from [https://conversionsciences.com/ab-testing-statistics/](https://conversionsciences.com/ab-testing-statistics/) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -312,7 +312,7 @@ Many companies offer ready-to-use infrastructure to make experimentation easy. A
 
 <figcaption>
 
-The term canary release comes from the practice of bringing [canary birds into coal mines](https://www.forbes.com/sites/kionasmith/2019/12/31/the-canary-in-the-coal-mine-isnt-ancient-history), because the specially-bred birds were more sensitive to carbon monoxide and would die before the gas levels became lethal for the human miners. Canary releases try to detect release problems early.
+The term canary release comes from the practice of bringing [canary birds into coal mines](https://www.forbes.com/sites/kionasmith/2019/12/31/the-canary-in-the-coal-mine-isnt-ancient-history), because the specially-bred birds were more sensitive to carbon monoxide and would die before the gas levels became lethal for the human miners. Canary releases try to detect release problems early. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

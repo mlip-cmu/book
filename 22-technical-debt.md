@@ -13,7 +13,7 @@ The power of the technical debt metaphor comes from its simplicity and ease of c
 
 <figcaption>
 
-Technical debt comic by [Cornel](https://www.monkeyuser.com/2018/tech-debt/)
+Technical debt comic by [Cornel](https://www.monkeyuser.com/2018/tech-debt/) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -30,7 +30,7 @@ As a running example, consider autonomous delivery robots, which are currently d
 
 <figcaption>
 
-(Kiwibot, CC-BY-SA-4.0 by Ganbaruby)
+(Kiwibot, CC-BY-SA-4.0 by Ganbaruby) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

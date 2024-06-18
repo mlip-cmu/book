@@ -13,7 +13,7 @@ It is often difficult to anticipate specific mistakes of a model—and it may of
 
 <figcaption>
 
-The Docklands Light Railway system in London has operated trains without a driver since 1987. Many modern public transportation systems use increasingly sophisticated automation, including the Paris Métro Line 14 and the Copenhagen Metro (Picture CC BY 2.0 by [Matt Brown](https://flickr.com/photos/londonmatt/16967528674/in/photolist-rRn28Q-5sYsHC-2jyQ5eS-4HW1Xd-DJhHaN-5sU5nK-2njUYgo-dxvEe-5ktzAC-5NVk7v-EdEDEM-5NViA2-5NVkza-5NVoqK-5NVjHp-yPh6nQ-5NVpuk-GGk2i-9hRM6i-5xrgUB-uffEa-9J4ter-B7CsaH-4SZ5Zv-9J4ojp-4ciobk-dxvEc-5RuRm7-5tcXev-5RuRmb-oomBgW-uffzG-9J7gU5-5NVnuH-XvVrx5-5NVmux-GvRYkX-2jHQ4EH-zsMLHH-9fCye3-GRsrtK-2TQpgA-HiZyrb-HmrbXV-GwP6mm-HswHXi-RB1xwE-5yX5XH-9J4ptH-aiAqh)).
+The Docklands Light Railway system in London has operated trains without a driver since 1987. Many modern public transportation systems use increasingly sophisticated automation, including the Paris Métro Line 14 and the Copenhagen Metro (Picture CC BY 2.0 by [Matt Brown](https://flickr.com/photos/londonmatt/16967528674/in/photolist-rRn28Q-5sYsHC-2jyQ5eS-4HW1Xd-DJhHaN-5sU5nK-2njUYgo-dxvEe-5ktzAC-5NVk7v-EdEDEM-5NViA2-5NVkza-5NVoqK-5NVjHp-yPh6nQ-5NVpuk-GGk2i-9hRM6i-5xrgUB-uffEa-9J4ter-B7CsaH-4SZ5Zv-9J4ojp-4ciobk-dxvEc-5RuRm7-5tcXev-5RuRmb-oomBgW-uffzG-9J7gU5-5NVnuH-XvVrx5-5NVmux-GvRYkX-2jHQ4EH-zsMLHH-9fCye3-GRsrtK-2TQpgA-HiZyrb-HmrbXV-GwP6mm-HswHXi-RB1xwE-5yX5XH-9J4ptH-aiAqh)). <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -133,7 +133,7 @@ Guardrails are common in production systems. For example, when suggesting automa
 
 <figcaption>
 
-Metro station Cour Saint-Émilion in Paris with automated platform screen doors that only open when a train is in the station (CC BY-SA 4.0 by [Chabe01](https://en.wikipedia.org/wiki/Paris_M%C3%A9tro_Line_14#/media/File:Station_M%C3%A9tro_Cour_St_%C3%89milion_Paris_13.jpg)).
+Metro station Cour Saint-Émilion in Paris with automated platform screen doors that only open when a train is in the station (CC BY-SA 4.0 by [Chabe01](https://en.wikipedia.org/wiki/Paris_M%C3%A9tro_Line_14#/media/File:Station_M%C3%A9tro_Cour_St_%C3%89milion_Paris_13.jpg)). <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

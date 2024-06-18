@@ -154,7 +154,7 @@ The most common approach to evaluate the quality of a test suite is to measure *
 
 <figcaption>
 
-An example of a coverage report, highlighting which lines have not been executed by any tests, which may inform what additional tests to add, for example tests about year changes and tests about the 400-year leap year rule.
+An example of a coverage report, highlighting which lines have not been executed by any tests, which may inform what additional tests to add, for example tests about year changes and tests about the 400-year leap year rule. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -181,7 +181,7 @@ Today, the most common form of code review is lightweight incremental code revie
 
 <figcaption>
 
-Example excerpt of code review of suggested changes in a pull request for the open source project [Apache Kafka](https://github.com/apache/kafka/pull/11864) on GitHub. Here, the change’s author constructively discusses with other contributors possible ways to make the change clearer.
+Example excerpt of code review of suggested changes in a pull request for the open source project [Apache Kafka](https://github.com/apache/kafka/pull/11864) on GitHub. Here, the change’s author constructively discusses with other contributors possible ways to make the change clearer. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -265,7 +265,7 @@ Third, assign clear responsibilities for quality-assurance work. Some organizati
 
 <figcaption>
 
-Screenshot of static analysis warning shown within Google’s in-house code review tool, from 🗎 Sadowski, Caitlin, Edward Aftandilian, Alex Eagle, Liam Miller-Cushon, and Ciera Jaspan. "[Lessons from building static analysis tools at Google](https://dl.acm.org/doi/pdf/10.1145/3188720)." Communications of the ACM 61, no. 4 (2018): 58-66.
+Screenshot of static analysis warning shown within Google’s in-house code review tool, from 🗎 Sadowski, Caitlin, Edward Aftandilian, Alex Eagle, Liam Miller-Cushon, and Ciera Jaspan. "[Lessons from building static analysis tools at Google](https://dl.acm.org/doi/pdf/10.1145/3188720)." Communications of the ACM 61, no. 4 (2018): 58-66. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

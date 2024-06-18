@@ -170,7 +170,7 @@ Note that, by construction, feature-influence explanations are local and only ex
 
 <figcaption>
 
-Example of visually illustrating which pixels were most important for and against predicting this image to contain a cat, from the [LIME documentation](https://github.com/marcotcr/lime).
+Example of visually illustrating which pixels were most important for and against predicting this image to contain a cat, from the [LIME documentation](https://github.com/marcotcr/lime). <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

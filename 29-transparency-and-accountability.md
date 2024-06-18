@@ -17,7 +17,7 @@ There are many examples where systems make automated decisions (e.g., filtering,
 
 <figcaption>
 
-A [public example](https://twitter.com/TheWrongNoel/status/1194842728862892033) of managers being surprised by an automated screening tool used by the HR department in an organization without the hiring manager’s knowledge.
+A [public example](https://twitter.com/TheWrongNoel/status/1194842728862892033) of managers being surprised by an automated screening tool used by the HR department in an organization without the hiring manager’s knowledge. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -92,7 +92,7 @@ A [large scale survey](https://insights.stackoverflow.com/survey/2018/#ethics) w
 
 <figcaption>
 
-Results from the [2018 StackOverflow Survey](https://insights.stackoverflow.com/survey/2018/#technology-and-society) on who should be responsible AI.
+Results from the [2018 StackOverflow Survey](https://insights.stackoverflow.com/survey/2018/#technology-and-society) on who should be responsible AI. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

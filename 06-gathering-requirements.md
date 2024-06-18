@@ -17,7 +17,7 @@ Admittedly, requirements engineering often has a poor reputation among software 
 
 <figcaption>
 
-Requirements engineering is full of challenges and misunderstandings (CC 3.0-BY [projectcartoon.com](https://web.archive.org/web/20181027030048/http://www.projectcartoon.com/)).
+Requirements engineering is full of challenges and misunderstandings (CC 3.0-BY [projectcartoon.com](https://web.archive.org/web/20181027030048/http://www.projectcartoon.com/)). <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

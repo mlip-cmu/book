@@ -45,7 +45,7 @@ A process diagram showing the relationship between the different phases of [CRIS
 
 <figcaption>
 
-A process model of Microsoft’s Team Data Science Process, from Microsoft Azure Team, "[What is the Team Data Science Process?](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)" Microsoft Documentation, Jan 2020
+A process model of Microsoft’s Team Data Science Process, from Microsoft Azure Team, "[What is the Team Data Science Process?](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview)" Microsoft Documentation, Jan 2020 <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -68,7 +68,7 @@ Computational notebooks have a long history and are rooted in ideas of *[literat
 
 <figcaption>
 
-An example of a notebook interleaving code and text cells and showing the output of a code cell below the cell.
+An example of a notebook interleaving code and text cells and showing the output of a code cell below the cell. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -154,7 +154,7 @@ The spiral model suggests building a series of prototypes, interleaving requirem
 
 <figcaption>
 
-Agile development with constant iteration, for example, through sprints and weekly standup meetings. (CC BY-SA 4.0, [Lakeworks](https://en.wikipedia.org/wiki/Scrum_(software_development)#/media/File:Scrum_process.svg))
+Agile development with constant iteration, for example, through sprints and weekly standup meetings. (CC BY-SA 4.0, [Lakeworks](https://en.wikipedia.org/wiki/Scrum_(software_development)#/media/File:Scrum_process.svg)) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

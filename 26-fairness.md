@@ -98,7 +98,7 @@ At this point, many examples of harms from machine-learned models have been show
 
 <figcaption>
 
-Results from a study illustrating how commercial gender classification systems perform poorly for certain demographics, from 🗎 Buolamwini, Joy, and Timnit Gebru. "[Gender shades: Intersectional accuracy disparities in commercial gender classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)." In Conference on Fairness, Accountability and Transparency, pp. 77-91. 2018.
+Results from a study illustrating how commercial gender classification systems perform poorly for certain demographics, from 🗎 Buolamwini, Joy, and Timnit Gebru. "[Gender shades: Intersectional accuracy disparities in commercial gender classification](http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf)." In Conference on Fairness, Accountability and Transparency, pp. 77-91. 2018. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -147,7 +147,7 @@ Bing’s image search results for “CEO” show only men in that role.
 
 <figcaption>
 
-A map of racial/ethnic distribution in New York based on 2010 U.S. Census data. Each dot is 25 people: White (red dots), Black (blue dots), Asian (green dots), Hispanic (orange dots), and others (yellow dots) by [Eric Fisher](https://www.flickr.com/photos/walkingsf/5559914315/) (CC BY-SA 2.0). A person’s address can be used as a proxy for their race/ethnicity with reasonable confidence in many neighborhoods.
+A map of racial/ethnic distribution in New York based on 2010 U.S. Census data. Each dot is 25 people: White (red dots), Black (blue dots), Asian (green dots), Hispanic (orange dots), and others (yellow dots) by [Eric Fisher](https://www.flickr.com/photos/walkingsf/5559914315/) (CC BY-SA 2.0). A person’s address can be used as a proxy for their race/ethnicity with reasonable confidence in many neighborhoods. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

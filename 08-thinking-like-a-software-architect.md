@@ -67,7 +67,7 @@ To illustrate different views of a system, consider different maps of a city, su
 
 <figcaption>
 
-Neighborhoods of Pittsburgh by [Andrew Somerville](https://en.wikipedia.org/wiki/File:Pittsburgh_Pennsylvania_neighborhoods_fade.svg)
+Neighborhoods of Pittsburgh by [Andrew Somerville](https://en.wikipedia.org/wiki/File:Pittsburgh_Pennsylvania_neighborhoods_fade.svg) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -78,7 +78,7 @@ Neighborhoods of Pittsburgh by [Andrew Somerville](https://en.wikipedia.org/wiki
 
 <figcaption>
 
-[OpenCycleMap](https://www.opencyclemap.org/?zoom=14&lat=40.44652&lon=-79.96264&layers=B0000) of Pittsburgh
+[OpenCycleMap](https://www.opencyclemap.org/?zoom=14&lat=40.44652&lon=-79.96264&layers=B0000) of Pittsburgh <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -89,7 +89,7 @@ Neighborhoods of Pittsburgh by [Andrew Somerville](https://en.wikipedia.org/wiki
 
 <figcaption>
 
-Map of Downtown Pittsburgh (CC BY-SA 1.0, [PerryPlanet](https://commons.wikimedia.org/wiki/File:Pittsburgh_downtown_map.svg))
+Map of Downtown Pittsburgh (CC BY-SA 1.0, [PerryPlanet](https://commons.wikimedia.org/wiki/File:Pittsburgh_downtown_map.svg)) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

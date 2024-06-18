@@ -17,7 +17,7 @@ Rather than developing the technology from scratch, the small engineering team d
 
 <figcaption>
 
-Example of a chatbot trying to engage with a user.
+Example of a chatbot trying to engage with a user. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -150,7 +150,7 @@ Descriptions of measures will rarely be perfect and ambiguity-free, but more pre
 
 <figcaption>
 
-Example of developing a measure for code maintainability from lower-level measures.
+Example of developing a measure for code maintainability from lower-level measures. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -194,7 +194,7 @@ Designing custom measures is difficult and many properties can seem elusive. It 
 
 <figcaption>
 
-Typical illustration of the streetlight effect: Focusing attention on aspects that are easy to observe.
+Typical illustration of the streetlight effect: Focusing attention on aspects that are easy to observe. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

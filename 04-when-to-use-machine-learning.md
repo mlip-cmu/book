@@ -15,7 +15,7 @@ As a scenario, we will discuss personalized music recommendations, such as Spoti
 
 <figcaption>
 
-Example of automated personalized music recommendations “Made For You” offered as multiple curated playlists for each subscriber in Spotify.
+Example of automated personalized music recommendations “Made For You” offered as multiple curated playlists for each subscriber in Spotify. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

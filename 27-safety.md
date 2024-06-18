@@ -21,7 +21,7 @@ A system is *safe* if it prevents *accidents*, where an accident is an undesired
 
 <figcaption>
 
-Improving reliability of the walls of the gas storage tank is not enough to assure safety.
+Improving reliability of the walls of the gas storage tank is not enough to assure safety. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -183,7 +183,7 @@ An assurance case helps to decompose a main safety claim hierarchically into man
 
 <figcaption>
 
-For autonomous vehicles, Aurora has developed and released an [extended assurance case structure](https://safetycaseframework.aurora.tech/) of claims and subclaims and explained [their rationale](https://aurora.tech/blog/aurora-unveils-first-ever-safety-case-framework). While evidence is not made public with these documents, they provide extensive examples of the kind of reasoning used to argue for safe behavior of autonomous vehicles.
+For autonomous vehicles, Aurora has developed and released an [extended assurance case structure](https://safetycaseframework.aurora.tech/) of claims and subclaims and explained [their rationale](https://aurora.tech/blog/aurora-unveils-first-ever-safety-case-framework). While evidence is not made public with these documents, they provide extensive examples of the kind of reasoning used to argue for safe behavior of autonomous vehicles. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

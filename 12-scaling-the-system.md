@@ -27,7 +27,7 @@ Google Photos shows uploaded photos online and in a mobile app, typically chrono
 
 <figcaption>
 
-Example of the Google Photos web interface searching for “trees” in uploaded personal images.
+Example of the Google Photos web interface searching for “trees” in uploaded personal images. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -452,7 +452,7 @@ The gradient descent learning strategy of neural networks is also naturally incr
 
 <figcaption>
 
-Architecture diagram of the TensorFlow Parameter Server architecture from 🗎 Li, Mu, et al. "[Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf)." OSDI, 2014. On the top, the server group holds the model parameters and merges parameter updates from the workers. Workers perform gradient descent learning on subsets of the data and send updates to parameters back to the server, batched and compressed to save bandwidth.
+Architecture diagram of the TensorFlow Parameter Server architecture from 🗎 Li, Mu, et al. "[Scaling distributed machine learning with the parameter server](https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-li_mu.pdf)." OSDI, 2014. On the top, the server group holds the model parameters and merges parameter updates from the workers. Workers perform gradient descent learning on subsets of the data and send updates to parameters back to the server, batched and compressed to save bandwidth. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

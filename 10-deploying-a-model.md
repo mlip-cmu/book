@@ -17,7 +17,7 @@ Consider a big tech company wanting to give smart glasses another chance. Those 
 
 <figcaption>
 
-Google Glass, 2014 (CC BY-SA 3.0 [Mikepanhu](https://en.wikipedia.org/wiki/Google_Glass#/media/File:Google_Glass_with_frame.jpg))
+Google Glass, 2014 (CC BY-SA 3.0 [Mikepanhu](https://en.wikipedia.org/wiki/Google_Glass#/media/File:Google_Glass_with_frame.jpg)) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -30,7 +30,7 @@ There are many existing building blocks for such an application. Text translatio
 
 <figcaption>
 
-Korean signs in central Seoul (by [8minwoo](https://pixabay.com/photos/nightlife-republic-of-korea-jongno-2162772/)). Foreigners would likely benefit from translations.
+Korean signs in central Seoul (by [8minwoo](https://pixabay.com/photos/nightlife-republic-of-korea-jongno-2162772/)). Foreigners would likely benefit from translations. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -454,7 +454,7 @@ An example of a one-page model documentation following the model card template, 
 
 <figcaption>
 
-Excerpt of the Limitations section of the model card documenting Google’s public Object Detection API at [https://modelcards.withgoogle.com/object-detection](https://modelcards.withgoogle.com/object-detection). The same model card also breaks down the prediction accuracy of the model by many different criteria, helping users assess whether the model fits their use case.
+Excerpt of the Limitations section of the model card documenting Google’s public Object Detection API at [https://modelcards.withgoogle.com/object-detection](https://modelcards.withgoogle.com/object-detection). The same model card also breaks down the prediction accuracy of the model by many different criteria, helping users assess whether the model fits their use case. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

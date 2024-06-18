@@ -163,7 +163,7 @@ From a software-engineering perspective, it is prudent to consider every machine
 
 <figcaption>
 
-A smart toaster may occasionally burn some toast, but it shall never burn down the entire kitchen.
+A smart toaster may occasionally burn some toast, but it shall never burn down the entire kitchen. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -186,7 +186,7 @@ Well-designed systems can appear magically and simply work, releasing humans fro
 
 <figcaption>
 
-A smart safe browsing feature uses machine learning to warn of malicious websites. The list of sites may or may not be reviewed by experts. The end-user interaction is designed to automatically stop the user from reaching the pack, who still can deliberately override the warning though.
+A smart safe browsing feature uses machine learning to warn of malicious websites. The list of sites may or may not be reviewed by experts. The end-user interaction is designed to automatically stop the user from reaching the pack, who still can deliberately override the warning though. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

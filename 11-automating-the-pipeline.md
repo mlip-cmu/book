@@ -79,7 +79,7 @@ If data is manually entered in an (often unpaid) *crowd-sourcing* setting, often
 
 <figcaption>
 
-Community citizen science project [SmellPGH](https://smellpgh.org/) provides a mobile application to the interested general public to record air pollution data, which is used as one of multiple data sources in the project.
+Community citizen science project [SmellPGH](https://smellpgh.org/) provides a mobile application to the interested general public to record air pollution data, which is used as one of multiple data sources in the project. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -104,7 +104,7 @@ To support manual labeling, it is common to provide a user interface for labeler
 
 <figcaption>
 
-Screenshot from the [Label Studio interface](https://labelstud.io/templates/named_entity.html) for labeling different named entities in text documents.
+Screenshot from the [Label Studio interface](https://labelstud.io/templates/named_entity.html) for labeling different named entities in text documents. <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -117,7 +117,7 @@ Screenshot from the [Label Studio interface](https://labelstud.io/templates/name
 
 <figcaption>
 
-Illustration of Snorkel: Domain experts provide labeling functions, typically as short code snippets that suggest partial labels for unlabeled data. Labels from those labeling functions are then combined into probabilistic training labels through a generative model that weights agreement between different labeling functions. The noise-aware discriminative model is the traditional model trained on this labeled data. Source: 🔗 [https://www.snorkel.org/blog/snorkel-programming](https://www.snorkel.org/blog/snorkel-programming)
+Illustration of Snorkel: Domain experts provide labeling functions, typically as short code snippets that suggest partial labels for unlabeled data. Labels from those labeling functions are then combined into probabilistic training labels through a generative model that weights agreement between different labeling functions. The noise-aware discriminative model is the traditional model trained on this labeled data. Source: 🔗 [https://www.snorkel.org/blog/snorkel-programming](https://www.snorkel.org/blog/snorkel-programming) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>

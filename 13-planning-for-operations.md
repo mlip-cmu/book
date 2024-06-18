@@ -63,7 +63,7 @@ Typically, observing a system consists of three distinct steps: *instrumenting* 
 
 <figcaption>
 
-Example screenshot of an AppDynamics FlowMap showing the status and interaction of components in a distributed system. Source: [AppDynamics Knowledgebase](https://community.appdynamics.com/t5/Knowledge-Base/How-do-I-use-AppDynamics-with-ServiceNow/ta-p/30095).
+Example screenshot of an AppDynamics FlowMap showing the status and interaction of components in a distributed system. Source: [AppDynamics Knowledgebase](https://community.appdynamics.com/t5/Knowledge-Base/How-do-I-use-AppDynamics-with-ServiceNow/ta-p/30095). <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -151,7 +151,7 @@ The best-known tool in this space is [Kubernetes](https://kubernetes.io/), a con
 
 <figcaption>
 
-Overview of the Kubernetes architecture, where the Kubernetes master controls the allocation of containers to Kubernetes nodes, CC BY-SA 4.0 by [Khtan66](https://en.wikipedia.org/wiki/Kubernetes#/media/File:Kubernetes.png)
+Overview of the Kubernetes architecture, where the Kubernetes master controls the allocation of containers to Kubernetes nodes, CC BY-SA 4.0 by [Khtan66](https://en.wikipedia.org/wiki/Kubernetes#/media/File:Kubernetes.png) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
@@ -222,7 +222,7 @@ Neither DevOps nor MLOps have a single widely agreed-upon definition, but they c
 
 <figcaption>
 
-Stages in a DevOps toolchain (CC BY-SA 4.0 [Kharnagy](https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg))
+Stages in a DevOps toolchain (CC BY-SA 4.0 [Kharnagy](https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg)) <span title="Online-only figure; not part of the printed book.">[Online-only figure.]</span>
 
 </figcaption>
 </figure>
