@@ -96,7 +96,6 @@ def encode_day_of_week(df):
 
 def prepare_data(df):
   df = clean_data(df)
-
   df = encode_day_of_week(df)
   df = encode_month(df)
   df = encode_weather(df)
@@ -271,7 +270,6 @@ class FailedConnection(Connection):
   def __init__(self, failures):
     self.remaining_failures = failures
   def get(self, url):
-    print(self.remaining_failures)
     self.remaining_failures -= 1
     if self.remaining_failures >= 0:
       raise TimeoutError('fail')
@@ -360,14 +358,14 @@ Generally, if repair for data quality problems is not possible or too many data 
 ```python
 # Variant A, returns 10 for "10k"
 num = data.Size.replace(r'[kM]+$', '', regex=True).astype(float)
-factor = data.Size.str.extract(r'[\d\.]+([KM]+)', expand =False)
-factor = factor.replace(['k','M'], [10**3, 10**6]). fillna(1)
+factor = data.Size.str.extract(r'[\d\.]+([KM]+)', expand=False)
+factor = factor.replace(['k','M'], [10**3, 10**6]).fillna(1)
 data['Size'] = num*factor.astype(int)
 
 # Variant B, returns 100.5000000 for "100.5M"
-data["Size"]= data["Size"].replace(regex =['k'], value='000')
-data["Size"]= data["Size"].replace(regex =['M'], value='000000')
-data["Size"]= data["Size"].astype(str). astype(float)
+data["Size"] = data["Size"].replace(regex=['k'], value='000')
+data["Size"] = data["Size"].replace(regex=['M'], value='000000')
+data["Size"] = data["Size"].astype(str).astype(float)
 ```
 
 <figcaption>
@@ -432,4 +430,4 @@ The code to transform data, to train models, and to automate the entire process 
 
 ---
 *As all chapters, this text is released under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0</a> license.*
-*Last updated on 2024-06-13.*
+*Last updated on 2024-08-08.*

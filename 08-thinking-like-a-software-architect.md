@@ -233,7 +233,7 @@ Regarding machine learning in software systems, we are still at an early stage o
   * *Alternatives:* Ping/echo tactic where the monitoring component requests responses.
 
 
-**Example of a machine-learning design pattern for reproducibility: The Feature Store pattern**
+**Example of a machine-learning design pattern for reuse: The Feature Store pattern**
 
   * *Name:* Feature Store. 
 
@@ -298,4 +298,4 @@ Going from requirements to implementation is hard. Design and architecture plann
 
 ---
 *As all chapters, this text is released under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0</a> license.*
-*Last updated on 2024-06-13.*
+*Last updated on 2024-08-08.*
