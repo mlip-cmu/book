@@ -15,7 +15,7 @@ Consider a company that develops a new way of detecting credit card fraud with h
 
 ## From System Quality to Model and Pipeline Quality
 
-A key part of requirements engineering in any software project is typically to identify the relevant *quality requirements* for the system, in addition to functional requirements. In traditional software projects, quality requirements may include scalability, response time, cost of operation, usability, maintainability, safety, security, and time to release. In our credit card scenario, we want to detect fraud accurately and quickly, react rapidly to evolving fraud schemes, and make a profit from the sheer volume of transactions and low human involvement.
+A key part of requirements engineering in any software project is typically to identify the relevant *quality requirements* for the system, in addition to behavioral requirements. In traditional software projects, quality requirements may include scalability, response time, cost of operation, usability, maintainability, safety, security, and time to release. In our credit card scenario, we want to detect fraud accurately and quickly, react rapidly to evolving fraud schemes, and make a profit from the sheer volume of transactions and low human involvement.
 
 As discussed in chapter *[From Models to Systems](02-from-models-to-systems.md)*, machine-learning components—including the learned models, the training pipeline, and the monitoring infrastructure—are part of a larger system and those components need to support the system’s quality goals:
 
@@ -149,4 +149,4 @@ Data scientists have a large number of design decisions when training a model fo
 
 ---
 *As all chapters, this text is released under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0</a> license.*
-*Last updated on 2024-06-17.*
+*Last updated on 2024-08-09.*
