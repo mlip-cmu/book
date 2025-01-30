@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/24-header.jpg" alt="A photo of a filing cabinet with hanging folders. There are a large number of folders visible, each labeled with a number.">
+<img class="headerimg" src="img/24-header.jpg" alt="A photo of a filing cabinet with hanging folders. There are a large number of folders visible, each labeled with a number." />
 <div class="chapter">Chapter 24</div>
 
 # Versioning, Provenance, and Reproducibility

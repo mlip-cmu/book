@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/04-header.jpg" alt="Photo of a person opening bottles of sparkling wine with a hammer and nail.">
+<img class="headerimg" src="img/04-header.jpg" alt="Photo of a person opening bottles of sparkling wine with a hammer and nail." />
 <div class="chapter">Chapter 4</div>
 
 # When to use Machine Learning

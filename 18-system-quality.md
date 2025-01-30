@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/18-header.jpg" alt="A photo of a half completed wooden puzzle with few large pieces all in the shape of animals. Hands are visible in the foreground and a completed puzzle in the background.">
+<img class="headerimg" src="img/18-header.jpg" alt="A photo of a half completed wooden puzzle with few large pieces all in the shape of animals. Hands are visible in the foreground and a completed puzzle in the background." />
 <div class="chapter">Chapter 18</div>
 
 # System Quality

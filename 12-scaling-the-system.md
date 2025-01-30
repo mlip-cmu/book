@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/12-header.jpg" alt="A photo of a server rack with many servers.">
+<img class="headerimg" src="img/12-header.jpg" alt="A photo of a server rack with many servers." />
 <div class="chapter">Chapter 12</div>
 
 # Scaling the System

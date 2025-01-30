@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/20-header.jpg" alt="A photo of a waterfall in sunlight among trees.">
+<img class="headerimg" src="img/20-header.jpg" alt="A photo of a waterfall in sunlight among trees." />
 <div class="chapter">Chapter 20</div>
 
 # Data Science and Software Engineering Process Models

@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/21-header.jpg" alt="A photo of many board game meeples in different colors arranged on a board that seems to represent a network.">
+<img class="headerimg" src="img/21-header.jpg" alt="A photo of many board game meeples in different colors arranged on a board that seems to represent a network." />
 <div class="chapter">Chapter 21</div>
 
 # Interdisciplinary Teams

@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/02-header.jpg" alt="A sidewalk delivery robot driving down a footpath">
+<img class="headerimg" src="img/02-header.jpg" alt="A sidewalk delivery robot driving down a footpath" />
 <div class="chapter">Chapter 2</div>
 
 # From Models to Systems

@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/06-header.jpg" alt="A photo of four folders with a lot of paper">
+<img class="headerimg" src="img/06-header.jpg" alt="A photo of four folders with a lot of paper" />
 <div class="chapter">Chapter 6</div>
 
 # Gathering Requirements

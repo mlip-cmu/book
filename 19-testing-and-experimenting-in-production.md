@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/19-header.jpg" alt="A photo of a large, windowless, dark room with a long control console with numerous dials and switches and displays. The room appears to be a control room or a space for monitoring and operating a large production system.">
+<img class="headerimg" src="img/19-header.jpg" alt="A photo of a large, windowless, dark room with a long control console with numerous dials and switches and displays. The room appears to be a control room or a space for monitoring and operating a large production system." />
 <div class="chapter">Chapter 19</div>
 
 # Testing and Experimenting in Production

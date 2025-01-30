@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/15-header.jpg" alt="A closeup photo of a microscope.">
+<img class="headerimg" src="img/15-header.jpg" alt="A closeup photo of a microscope." />
 <div class="chapter">Chapter 15</div>
 
 # Model Quality
