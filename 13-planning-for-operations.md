@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/13-header.jpg" alt="A photo of a harbor with two large container ships ready for unloading.">
+<img class="headerimg" src="img/13-header.jpg" alt="A photo of a harbor with two large container ships ready for unloading." />
 <div class="chapter">Chapter 13</div>
 
 # Planning for Operations

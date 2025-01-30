@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/03-header.jpg" alt="A photo of cracked walnuts">
+<img class="headerimg" src="img/03-header.jpg" alt="A photo of cracked walnuts" />
 <div class="chapter">Chapter 3</div>
 
 # Machine Learning in a Nutshell for Software Engineers

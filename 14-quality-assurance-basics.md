@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/14-header.jpg" alt="A photo of a person standing in a storage room filled with wooden barrels. He is holding a clipboard, filling out a form.">
+<img class="headerimg" src="img/14-header.jpg" alt="A photo of a person standing in a storage room filled with wooden barrels. He is holding a clipboard, filling out a form." />
 <div class="chapter">Chapter 14</div>
 
 # Quality Assurance Basics

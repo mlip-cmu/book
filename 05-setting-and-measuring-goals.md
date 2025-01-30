@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/05-header.jpg" alt="A photo of somebody measuring the size of a bolt, with several screws, spanners, and a schematic drawing of bolts in the background.">
+<img class="headerimg" src="img/05-header.jpg" alt="A photo of somebody measuring the size of a bolt, with several screws, spanners, and a schematic drawing of bolts in the background." />
 <div class="chapter">Chapter 5</div>
 
 # Setting and Measuring Goals

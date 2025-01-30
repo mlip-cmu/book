@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/26-header.jpg" alt="A photo of a savory pie or quiche, cut into several slices on a white counter top. Next to the pie is a serving spoon and some sage leaves.">
+<img class="headerimg" src="img/26-header.jpg" alt="A photo of a savory pie or quiche, cut into several slices on a white counter top. Next to the pie is a serving spoon and some sage leaves." />
 <div class="chapter">Chapter 26</div>
 
 # Fairness

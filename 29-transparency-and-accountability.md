@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/29-header.jpg" alt="A close-up photo of the mechanics of a clock, showcasing its intricate details. The clock is made up of several gears appearing of fine texture and looking to have a golden color.">
+<img class="headerimg" src="img/29-header.jpg" alt="A close-up photo of the mechanics of a clock, showcasing its intricate details. The clock is made up of several gears appearing of fine texture and looking to have a golden color." />
 <div class="chapter">Chapter 29</div>
 
 # Transparency and Accountability

@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/17-header.jpg" alt="Photo of a thick, rusty old pipe seemingly in a basement or industrial site.">
+<img class="headerimg" src="img/17-header.jpg" alt="Photo of a thick, rusty old pipe seemingly in a basement or industrial site." />
 <div class="chapter">Chapter 17</div>
 
 # Pipeline Quality

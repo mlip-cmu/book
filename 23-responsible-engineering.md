@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/23-header.jpg" alt="A photo of a bridge going into the distance over a valley in a winter landscape. About 50 meters ahead the bridge is collapsed with steel girders on the valley floor.">
+<img class="headerimg" src="img/23-header.jpg" alt="A photo of a bridge going into the distance over a valley in a winter landscape. About 50 meters ahead the bridge is collapsed with steel girders on the valley floor." />
 <div class="chapter">Chapter 23</div>
 
 # Responsible Engineering

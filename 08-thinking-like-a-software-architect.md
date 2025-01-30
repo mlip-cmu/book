@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/08-header.jpg" alt="A photo of a building in a forest above a waterfall">
+<img class="headerimg" src="img/08-header.jpg" alt="A photo of a building in a forest above a waterfall" />
 <div class="chapter">Chapter 8</div>
 
 # Thinking like a Software Architect

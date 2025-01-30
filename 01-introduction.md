@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/01-header.jpg" alt="Photo of a microphone in front of recording software">
+<img class="headerimg" src="img/01-header.jpg" alt="Photo of a microphone in front of recording software" />
 <div class="chapter">Chapter 1</div>
 
 # Introduction

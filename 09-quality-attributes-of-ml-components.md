@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/09-header.jpg" alt="A photo of a building that combines a very modern facade on one side of the building with a classic decorated facade on another side of the same building.">
+<img class="headerimg" src="img/09-header.jpg" alt="A photo of a building that combines a very modern facade on one side of the building with a classic decorated facade on another side of the same building." />
 <div class="chapter">Chapter 9</div>
 
 # Quality Attributes of ML Components

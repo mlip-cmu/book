@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/25-header.jpg" alt="A photo of a white, glass-walled greenhouse situated in a garden. The house is surrounded by various potted plants, creating a lush and green atmosphere.">
+<img class="headerimg" src="img/25-header.jpg" alt="A photo of a white, glass-walled greenhouse situated in a garden. The house is surrounded by various potted plants, creating a lush and green atmosphere." />
 <div class="chapter">Chapter 25</div>
 
 # Explainability
