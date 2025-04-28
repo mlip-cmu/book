@@ -250,7 +250,7 @@ The rest of this book will dive into many of these topics in much more depth, in
 
   * An excellent book that discusses many engineering challenges for building software products with machine-learning components based on a decade of experience in big-tech companies, which provided much of the inspiration for our undertaking: 🕮 Hulten, Geoff. *[Building Intelligent Systems: A Guide to Machine Learning Engineering](https://www.buildingintelligentsystems.com/).* Apress. 2018.
 
-  * There are many books that provide an excellent introduction to machine learning and data science. As a practical introduction, we recommend 🕮 Géron, Aurélien. *[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://bookshop.org/p/books/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-concepts-tools-and-techniques-to-build-intelligent-systems-aurelien-geron/18369970?ean=9781098125974)*. 3nd Edition, O'Reilly, 2022.
+  * There are many books that provide an excellent introduction to machine learning and data science. As a practical introduction, we recommend 🕮 Géron, Aurélien. *[Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow](https://bookshop.org/p/books/hands-on-machine-learning-with-scikit-learn-keras-and-tensorflow-concepts-tools-and-techniques-to-build-intelligent-systems-aurelien-geron/18369970?ean=9781098125974)*. 3rd Edition, O'Reilly, 2022.
 
   * An excellent book discussing the business aspects of machine learning: 🕮 Ajay Agrawal, Joshua Gans, Avi Goldfarb. *[Prediction Machines: The Simple Economics of Artificial Intelligence](https://bookshop.org/books/prediction-machines-the-simple-economics-of-artificial-intelligence/9781633695672).* Harvard Business Review Press, 2018.
 
