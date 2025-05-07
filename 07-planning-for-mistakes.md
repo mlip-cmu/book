@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/07-header.jpg" alt="A photo of two bollards in a sidewalk at night.">
+<img class="headerimg" src="img/07-header.jpg" alt="A photo of two bollards in a sidewalk at night." />
 <div class="chapter">Chapter 7</div>
 
 # Planning for Mistakes

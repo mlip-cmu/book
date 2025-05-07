@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/28-header.jpg" alt="A photo of a very large number of locks attached to a structure like a fence that is not visible because it is entirely covered by the locks. Some locks have writing or heart symbols on them.">
+<img class="headerimg" src="img/28-header.jpg" alt="A photo of a very large number of locks attached to a structure like a fence that is not visible because it is entirely covered by the locks. Some locks have writing or heart symbols on them." />
 <div class="chapter">Chapter 28</div>
 
 # Security and Privacy

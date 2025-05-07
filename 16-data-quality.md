@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/16-header.jpg" alt="A photo of a blurry fork lift driving through a warehouse with lots of items on the shelves.">
+<img class="headerimg" src="img/16-header.jpg" alt="A photo of a blurry fork lift driving through a warehouse with lots of items on the shelves." />
 <div class="chapter">Chapter 16</div>
 
 # Data Quality

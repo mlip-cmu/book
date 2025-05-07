@@ -1,4 +1,4 @@
-<img class="headerimg" src="img/10-header.jpg" alt="A closeup photo of an amplifier with many cables plugged into it.">
+<img class="headerimg" src="img/10-header.jpg" alt="A closeup photo of an amplifier with many cables plugged into it." />
 <div class="chapter">Chapter 10</div>
 
 # Deploying a Model
