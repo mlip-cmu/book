@@ -240,3 +240,14 @@ kbd {
 .result-no-output {
     font-style: italic;
 }
+
+
+.global-toc #summary {
+    display: none;
+}
+.global-toc p {
+    display: none;
+}
+.global-toc h1 {
+      font-size: 2rem;
+}
