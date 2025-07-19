@@ -10,3 +10,12 @@ Published April 8, 2025 by MIT Press: [Official MIT Press Page](https://mitpress
 The book corresponds to the CMU course [17-645 Machine Learning in Production](https://mlip-cmu.github.io/) (crosslisted as 11-695 AI Engineering) with publicly available slides and assignments. See also our [annotated bibliography](https://github.com/ckaestne/seaibib) on the topic.
 
 The book is released under a creative commons license: [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+
+## Table of Content
+
+<div class="global-toc">
+
+{{#include SUMMARY.md}}
+
+</div>
